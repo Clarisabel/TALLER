@@ -1,8 +1,8 @@
 -- PARTE 1
-CREATE DATABASE Libreria_EU
+CREATE DATABASE Libreria
 GO
 
-USE Libreria_EU
+USE Libreria
 GO
 
 -- ESQUEMAS
@@ -140,27 +140,18 @@ SELECT * FROM Ventas.DetalleVentas
 
 INSERT INTO Ventas.DetalleVentas (VentaID, LibroID, Cantidad, PrecioVenta)
 VALUES
-(11, 1, 4, 35000),
-(12, 31, 2, 80000),
-(13, 32, 3, 20000),
-(14, 33, 4, 76000),
-(15, 34, 5, 23000),
-(16, 35, 6, 28000),
-(17, 36, 7, 87999),
-(18, 37, 8, 90000),
-(19, 38, 9, 65000)
+(1, 1, 4, 35000),
+(2, 2, 2, 80000),
+(3, 3, 3, 20000),
+(4, 4, 4, 76000),
+(5, 5, 5, 23000),
+(6, 6, 6, 28000),
+(7, 7, 7, 87999),
+(8, 8, 8, 90000),
+(9, 9, 9, 65000)
 
  -- PARTE 4 
- -- AÑADIR COMUNA A UNA TABLA 
  
-ALTER TABLE Catalogo.Libros
-	ADD ISBN NVARCHAR(20),
-    Año_Publicacion INT;
-
-ALTER TABLE Ventas.Clientes
-	ADD Direccion NVARCHAR(30),
-    Celular NVARCHAR(20);
-GO
 
 --RELACIONES FUERA DE LA TABLA
 
